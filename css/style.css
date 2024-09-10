@@ -74,6 +74,28 @@
 .icon-mobile-nav[name="close-outline"] {
   display: none;
 }
+
+/* Sticket navigation */
+.stickey .header{
+  position:fixed;
+  top:0;
+  bottom:0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgb(255, 255, 255,0.97);
+  z-index: 999;
+  box-shadow:0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+
+}
+
+
+.stickey .section-hero{
+  margin-top: 9.6rem;
+}
+
+
 /******************************/
 /* Hero Section */
 /******************************/
@@ -148,7 +170,7 @@
 .heading-featured-in {
   font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: 00.75px;
+  letter-spacing: 0.75px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 2.4rem;
@@ -563,6 +585,15 @@
 
 .cta-form input::placeholder {
   color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+  /* it will remove default background border on a link and button.
+    But when we hit tab we dont know on which link the curser is,
+    and it will be hard foe the people who use keybord only.
+    Thats why we dont use "outline:none;"  */
 }
 
 /******************************/
